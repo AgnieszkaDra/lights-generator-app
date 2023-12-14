@@ -3,3 +3,23 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+.nav {
+  display: flex;
+}
+
+.nav > *{
+  margin-right: 32px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper nav {
+  margin-left: 12px;
+}
+
+.wrapper nav svg {
+  margin-right: 6px;
+}
