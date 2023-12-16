@@ -4,6 +4,7 @@ import { IconDecrement } from "./icons/IconDecrement"
 
 import styles from "./Counter.module.css"
 import { useState } from "react"
+import { SingleLight } from "./SingleLight"
 
 
 export const Counter = (props) => {
@@ -26,6 +27,9 @@ export const Counter = (props) => {
             </Text>
             <IconIncrement onClick={handleIncrement}/>
             <IconDecrement onClick={handleDecrement}/>
+            <div>
+                <SingleLight></SingleLight>
+            </div>
         </div>
     )
 }
