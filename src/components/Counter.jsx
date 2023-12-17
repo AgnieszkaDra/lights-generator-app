@@ -8,28 +8,15 @@ import { SingleLight } from "./SingleLight"
 
 
 export const Counter = (props) => {
-    const [value, setValue] = useState(0)
-
-    const handleIncrement = () => {
-        setValue(value + 1)
-    }
-
-    const handleDecrement = () => {
-        if(value <= 0) {
-            return
-        }
-        setValue(value - 1)
-    }
     return (
-        <div className={styles.nav}>
+        <div>
+        <nav className={'nav'}>
             <Text>
-               {value} {props.text} 
+               {props.count} {props.text} 
             </Text>
-            <IconIncrement onClick={handleIncrement}/>
-            <IconDecrement onClick={handleDecrement}/>
-            <div>
-                <SingleLight></SingleLight>
-            </div>
+            <IconIncrement onClick={props.onIncrement}/>
+            <IconDecrement onClick={props.onDecrement}/>
+        </nav>
         </div>
     )
 }
