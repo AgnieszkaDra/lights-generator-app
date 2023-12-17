@@ -3,7 +3,6 @@ const styles = (columns) => {
         display: "grid",
         gridTemplateColumns: `repeat(${columns},109px)`,
         columnGap: "20px",
-        columnGap: "20px"
     } 
 }
 
